@@ -1,0 +1,6 @@
+/**
+ * Partit
+ */
+public class Partit {
+
+}
