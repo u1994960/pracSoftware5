@@ -47,7 +47,7 @@ public class Equip {
     }
 
     // Realitzar el canvi
-    public boolean ferCanvi(int dorsalSurt, int dorsalEntra) {
+    public boolean ferCanvi(int dorsalSurt, int dorsalEntra, String nouRol) {
         Jugador jSurt = getJugadorPista(dorsalSurt);
         Jugador jEntra = getJugadorBanqueta(dorsalEntra);
 
@@ -58,12 +58,14 @@ public class Equip {
             banqueta.remove(jEntra);
             pista.add(jEntra);
             
+            jEntra.setRol(nouRol); 
+
             System.out.println("--- CANVI REALITZAT ---");
             System.out.println("SURT: " + jSurt.nom + " (Dorsal " + jSurt.getDorsal() + ")");
-            System.out.println("ENTRA: " + jEntra.nom + " (Dorsal " + jEntra.getDorsal() + ")");
+            System.out.println("ENTRA: " + jEntra.nom + " (Dorsal " + jEntra.getDorsal() + ") amb rol: " + nouRol);
             return true;
         } else {
-            System.out.println("Error: No s'han trobat els jugadors especificats (revisa si estan a pista/banqueta).");
+            System.out.println("Error: No s'han trobat els jugadors especificats.");
             return false;
         }
     }

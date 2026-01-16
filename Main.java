@@ -39,7 +39,7 @@ public class Main {
                     String cognom = dades[3].trim();
                     
                     Jugador j = new Jugador(dorsal + "DNI", nom, cognom, dorsal);
-                    
+
                     if (equip.equalsIgnoreCase("A")) {
                         if (pistaA.size() < 7) pistaA.add(j);
                         else banquetaA.add(j);
@@ -109,6 +109,7 @@ public class Main {
                     }
                     break;
 
+                
                 case 3:
                     System.out.print("Quin equip fa el canvi (A/B)? ");
                     String eqCanvi = sc.nextLine();
@@ -120,7 +121,13 @@ public class Main {
                             int dSurt = Integer.parseInt(sc.nextLine());
                             System.out.print("Dorsal jugador que ENTRA (banqueta): ");
                             int dEntra = Integer.parseInt(sc.nextLine());
-                            equipActiu.ferCanvi(dSurt, dEntra);
+                            
+                            // TORNEM A DEMANAR EL ROL
+                            System.out.print("Nou ROL del jugador entrant: ");
+                            String nRol = sc.nextLine();
+
+                            // Passem el rol al mètode
+                            equipActiu.ferCanvi(dSurt, dEntra, nRol);
                             
                         } catch (NumberFormatException e) {
                              System.out.println("Error: Els dorsals han de ser números.");
