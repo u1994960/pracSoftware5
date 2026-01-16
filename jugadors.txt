@@ -1,0 +1,16 @@
+A,1,Gonzalo,Perez
+A,2,Dika,Mem
+A,3,Aleix,Gomez
+A,4,Melvyn,Richardson
+A,5,Ludovic,Fabregas
+A,6,Thiagus,Petrus
+A,7,Blaz,Janc
+A,8,Luka,Cindric
+B,10,Nikola,Karabatic
+B,11,Mikkel,Hansen
+B,12,Luc,Abalo
+B,13,Daniel,Narcisse
+B,14,Thierry,Omeyer
+B,15,Uwe,Gensheimer
+B,16,Victor,Tomas
+B,17,Raul,Entrerrios
